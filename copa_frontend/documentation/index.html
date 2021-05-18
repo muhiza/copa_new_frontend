@@ -1,0 +1,1204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Decima</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="res.css"/>
+  <style>body{overflow: auto!important}</style>
+</head>
+<body class="ready">
+  <div class="markdown-section">
+
+    <h1>Overview</h1>
+
+<p>This documentation is to help you understand the template's structure. Please go through the documentation carefully to understand how this template is made and how to edit it properly. Basic HTML, CSS and JS knowledge is required.</p>
+
+<p>If you have any questions that are beyond the scope of this help file, please feel free to get in touch.</p>
+
+<p>Support requests can go through the form <a href="http://themeforest.net/user/iamnyasha/?ref=iamnyasha">on my ThemeForest profile page </a>or via email.</p>
+
+<h2>What is it?</h2>
+
+<p>One - React Next.js Ant Design Dashboard is a creative admin template built with React, Next.js and Ant Design. It comes out of the box with support for SSR and comes with light and dark colour schemes. With this, you get all you need to start working on your SAAS, CRM, CMS or dashboard based project.</p>
+
+<p>This template does NOT work with:
+  <pre>
+<code>
+- Wordpress
+- AngularJs
+- Static HTML
+- Bootstrap
+</code></pre></p>
+
+<h2>Whats included in support?</h2>
+
+<ul>
+<li>Responding to questions or problems regarding the item and its features</li>
+<li>Fixing bugs and reported issues</li>
+<li>Providing updates to ensure compatibility with new software versions</li>
+</ul>
+
+<h2>Whats not included in support?</h2>
+
+<ul>
+<li>Customization and installation services</li>
+<li>Support for third party software and plug-ins</li>
+</ul>
+
+<h2>Before seeking support</h2>
+
+<ul>
+<li>Make sure your question is a valid item Issue and not a customization request.</li>
+<li>Make sure you have read through the documentation and any related video guides before asking support on how to accomplish a task.</li>
+<li>Make sure to double check the item FAQs.</li>
+<li>If you have customized your item and now have an issue, back-track to make sure you didn't make a mistake. If you have made changes and can't find the issue, please provide us with your changelog.</li>
+<li>Most of the time we find that the solution to people's issues can be solved with a simple "Google Search". You might want to try that before seeking support. You might be able to fix the issue yourself much quicker than we can respond to your request.</li>
+<li>Make sure to state the name of the item you are having issues with when requesting support via ThemeForest.</li>
+</ul>
+
+<p><code>
+Once you've purchased please consider giving a 5 star rating, it helps in pushing out more updates and adding a lot more features.
+</code></p>
+
+<h1>Getting started</h1>
+
+<p>This template runs on Next.js and requires Node and NPM or YARN to be installed.</p>
+
+<h2>Installing the prerequisites</h2>
+
+<p><strong>Node.js and NPM:</strong> You can download Node.js from <a href="https://nodejs.org/">https://nodejs.org</a>. NPM comes bundled with Node.js</p>
+
+<p>For yarn, you can find the installation instructions <a href="https://yarnpkg.com/en/docs/install">here</a>.</p>
+
+<h2>Installing packages</h2>
+
+<p>Before proceeding you'll need to install packages. You can do this by running <strong>npm install / yarn install</strong> from the root of your project to install all the required dependencies.</p>
+
+<h2>Variables</h2>
+
+<p>In order to use Maps and openweather you'll need to add the API keys inside the next.config.js file located in the root of your project. A next.config.js file is already provided, use this to add your api keys.</p>
+
+<p>To get a mapbox access token follow this link <a href="https://www.mapbox.com">https://www.mapbox.com</a></p>
+
+<p>To get an open weather api key follow this link <a href="https://openweathermap.org/appid">https://openweathermap.org/appid</a></p>
+
+<h2>Running your project</h2>
+
+<p>This template runs on Next.js . For detailed instructions on how to use it follow this link <a href="https://nextjs.org/docs/">https://nextjs.org/docs/</a></p>
+
+<p>To launch a dev server run <code>npm run dev or yarn dev</code>. Navigate to <code>http://localhost:3000/</code>. The app will automatically reload if you change any of the source files.</p>
+
+<p>To run a production ready build first run <code>yarn build</code> to build the project then run <code>yarn start</code> to start the server.</p>
+
+<h1>Folder structure</h1>
+
+<pre><code>
+.
+|-- assets
+|   |-- antd-custom.less
+|   `-- styles.less
+|-- components
+|   |-- Calendar.js
+|   |-- Chat.js
+|   |-- Forgot.js
+|   |-- GeoJson.js
+|   |-- Grid.js
+|   |-- Header.js
+|   |-- Invoice.js
+|   |-- LockScreen.js
+|   |-- MapMarkers.js
+|   |-- Messages.js
+|   |-- NotFound.js
+|   |-- Overview.js
+|   |-- Page.js
+|   |-- PageBreadcrumb.js
+|   |-- Pricing.js
+|   |-- SidebarMenu.js
+|   |-- Signin.js
+|   |-- Signup.js
+|   |-- Social.js
+|   |-- Taskboard.js
+|   |-- Tile.js
+|   |-- Widgets.js
+|   |-- shared
+|   |   |-- AppProvider.js
+|   |   |-- ImageStatCard.js
+|   |   |-- NewsCard.js
+|   |   |-- PostCard.js
+|   |   |-- Pricing.js
+|   |   |-- ProfileCard.js
+|   |   |-- StatCard.js
+|   |   |-- Timeline.js
+|   |   |-- WeatherCard.js
+|   |   `-- taskboard
+|   |       |-- Column.js
+|   |       |-- TaskItem.js
+|   |       |-- TaskList.js
+|   |       `-- reorder.js
+|   `-- styles
+|       |-- AnimatedBG.js
+|       |-- Calendar.js
+|       |-- Chat.js
+|       |-- GlobalStyles.js
+|       |-- Header.js
+|       |-- Media.js
+|       |-- Nav.js
+|       |-- Page.js
+|       |-- Pricing.js
+|       |-- Sidebar.js
+|       |-- Taskboard.js
+|       |-- Tile.js
+|       `-- Timeline.js
+|-- demos
+|   |-- antd
+|   |   |-- affix
+|   |   |   |-- basic.js
+|   |   |   |-- demo.js
+|   |   |   |-- on-change.js
+|   |   |   `-- target.js
+|   |   |-- alert
+|   |   |   |-- banner.js
+|   |   |   |-- basic.js
+|   |   |   |-- closable.js
+|   |   |   |-- close-text.js
+|   |   |   |-- custom-icon.js
+|   |   |   |-- demo.js
+|   |   |   |-- description.js
+|   |   |   |-- icon.js
+|   |   |   |-- smooth-closed.js
+|   |   |   `-- style.js
+|   |   |-- anchor
+|   |   |   |-- basic.js
+|   |   |   |-- demo.js
+|   |   |   |-- onClick.js
+|   |   |   `-- static.js
+|   |   |-- autocomplete
+|   |   |   |-- basic.js
+|   |   |   |-- certain-category.js
+|   |   |   |-- custom.js
+|   |   |   |-- demo.js
+|   |   |   |-- non-case-sensitive.js
+|   |   |   |-- options.js
+|   |   |   `-- uncertain-category.js
+|   |   |-- avatar
+|   |   |   |-- badge.js
+|   |   |   |-- basic.js
+|   |   |   |-- demo.js
+|   |   |   |-- dynamic.js
+|   |   |   `-- type.js
+|   |   |-- backtop
+|   |   |   |-- basic.js
+|   |   |   |-- custom.js
+|   |   |   `-- demo.js
+|   |   |-- badge
+|   |   |   |-- basic.js
+|   |   |   |-- change.js
+|   |   |   |-- demo.js
+|   |   |   |-- dot.js
+|   |   |   |-- link.js
+|   |   |   |-- no-wrapper.js
+|   |   |   |-- overflow.js
+|   |   |   |-- status.js
+|   |   |   `-- title.js
+|   |   |-- breadcrumb
+|   |   |   |-- basic.js
+|   |   |   |-- demo.js
+|   |   |   |-- separator.js
+|   |   |   `-- withIcon.js
+|   |   |-- button
+|   |   |   |-- basic.js
+|   |   |   |-- block.js
+|   |   |   |-- button-group.js
+|   |   |   |-- demo.js
+|   |   |   |-- disabled.js
+|   |   |   |-- ghost.js
+|   |   |   |-- icon.js
+|   |   |   |-- loading.js
+|   |   |   |-- multiple.js
+|   |   |   `-- size.js
+|   |   |-- calendar
+|   |   |   |-- basic.js
+|   |   |   |-- card.js
+|   |   |   |-- demo.js
+|   |   |   |-- notice-calendar.js
+|   |   |   `-- select.js
+|   |   |-- card
+|   |   |   |-- basic.js
+|   |   |   |-- border-less.js
+|   |   |   |-- demo.js
+|   |   |   |-- flexible-content.js
+|   |   |   |-- grid-card.js
+|   |   |   |-- in-column.js
+|   |   |   |-- inner.js
+|   |   |   |-- loading.js
+|   |   |   |-- meta.js
+|   |   |   |-- simple.js
+|   |   |   `-- tabs.js
+|   |   |-- carousel
+|   |   |   |-- autoplay.js
+|   |   |   |-- basic.js
+|   |   |   |-- demo.js
+|   |   |   |-- fade.js
+|   |   |   `-- vertical.js
+|   |   |-- cascader
+|   |   |   |-- basic.js
+|   |   |   |-- change-on-select.js
+|   |   |   |-- custom-render.js
+|   |   |   |-- custom-trigger.js
+|   |   |   |-- default-value.js
+|   |   |   |-- demo.js
+|   |   |   |-- disabled-option.js
+|   |   |   |-- fields-name.js
+|   |   |   |-- hover.js
+|   |   |   |-- lazy.js
+|   |   |   |-- search.js
+|   |   |   |-- size.js
+|   |   |   `-- suffix.js
+|   |   |-- checkbox
+|   |   |   |-- basic.js
+|   |   |   |-- check-all.js
+|   |   |   |-- controller.js
+|   |   |   |-- demo.js
+|   |   |   |-- disabled.js
+|   |   |   |-- group.js
+|   |   |   `-- layout.js
+|   |   |-- collapse
+|   |   |   |-- accordion.js
+|   |   |   |-- basic.js
+|   |   |   |-- borderless.js
+|   |   |   |-- custom.js
+|   |   |   |-- demo.js
+|   |   |   |-- mix.js
+|   |   |   `-- noarrow.js
+|   |   |-- datepicker
+|   |   |   |-- basic.js
+|   |   |   |-- date-render.js
+|   |   |   |-- demo.js
+|   |   |   |-- disabled-date.js
+|   |   |   |-- disabled.js
+|   |   |   |-- extra-footer.js
+|   |   |   |-- format.js
+|   |   |   |-- mode.js
+|   |   |   |-- presetted-ranges.js
+|   |   |   |-- size.js
+|   |   |   |-- start-end.js
+|   |   |   |-- suffix.js
+|   |   |   `-- time.js
+|   |   |-- divider
+|   |   |   |-- demo.js
+|   |   |   |-- horizontal.js
+|   |   |   |-- orientation.js
+|   |   |   `-- vertical.js
+|   |   |-- drawer
+|   |   |   |-- basic-right.js
+|   |   |   |-- demo.js
+|   |   |   |-- from-drawer.js
+|   |   |   |-- multi-level-drawer.js
+|   |   |   |-- placement.js
+|   |   |   `-- user-profile.js
+|   |   |-- dropdown
+|   |   |   |-- basic.js
+|   |   |   |-- context-menu.js
+|   |   |   |-- demo.js
+|   |   |   |-- dropdown-button.js
+|   |   |   |-- event.js
+|   |   |   |-- item.js
+|   |   |   |-- overlay-visible.js
+|   |   |   |-- placement.js
+|   |   |   |-- sub-menu.js
+|   |   |   `-- trigger.js
+|   |   |-- form
+|   |   |   |-- advanced-search.js
+|   |   |   |-- coordinated.js
+|   |   |   |-- customized-form-controls.js
+|   |   |   |-- demo.js
+|   |   |   |-- dynamic-form-item.js
+|   |   |   |-- dynamic-rule.js
+|   |   |   |-- form-in-modal.js
+|   |   |   |-- global-state.js
+|   |   |   |-- horizontal-login.js
+|   |   |   |-- layout.js
+|   |   |   |-- normal-login.js
+|   |   |   |-- register.js
+|   |   |   |-- time-related-controls.js
+|   |   |   |-- validate-other.js
+|   |   |   |-- validate-static.js
+|   |   |   `-- without-form-create.js
+|   |   |-- grid
+|   |   |   |-- basic.js
+|   |   |   |-- demo.js
+|   |   |   |-- flex-align.js
+|   |   |   |-- flex-order.js
+|   |   |   |-- flex.js
+|   |   |   |-- gutter.js
+|   |   |   |-- offset.js
+|   |   |   |-- playground.js
+|   |   |   |-- responsive-more.js
+|   |   |   |-- responsive.js
+|   |   |   `-- sort.js
+|   |   |-- icon
+|   |   |   |-- basic.js
+|   |   |   |-- custom.js
+|   |   |   |-- demo.js
+|   |   |   |-- iconfont.js
+|   |   |   |-- old-icons.js
+|   |   |   `-- two-tone.js
+|   |   |-- input
+|   |   |   |-- addon.js
+|   |   |   |-- autosize-textarea.js
+|   |   |   |-- basic.js
+|   |   |   |-- demo.js
+|   |   |   |-- group.js
+|   |   |   |-- presuffix.js
+|   |   |   |-- search-input.js
+|   |   |   |-- size.js
+|   |   |   |-- textarea.js
+|   |   |   `-- tooltip.js
+|   |   |-- input-number
+|   |   |   |-- basic.js
+|   |   |   |-- demo.js
+|   |   |   |-- digit.js
+|   |   |   |-- disabled.js
+|   |   |   |-- formatter.js
+|   |   |   `-- size.js
+|   |   |-- layout
+|   |   |   |-- basic.js
+|   |   |   |-- custom-trigger.js
+|   |   |   |-- demo.js
+|   |   |   |-- fixed-sider.js
+|   |   |   |-- fixed.js
+|   |   |   |-- responsive.js
+|   |   |   |-- side.js
+|   |   |   |-- top-side-2.js
+|   |   |   |-- top-side.js
+|   |   |   `-- top.js
+|   |   |-- list
+|   |   |   |-- basic.js
+|   |   |   |-- demo.js
+|   |   |   |-- grid.js
+|   |   |   |-- infinite-load.js
+|   |   |   |-- infinite-virtualized-load.js
+|   |   |   |-- loadmore.js
+|   |   |   |-- resposive.js
+|   |   |   |-- simple.js
+|   |   |   `-- vertical.js
+|   |   |-- mention
+|   |   |   |-- async.js
+|   |   |   |-- avatar.js
+|   |   |   |-- basic.js
+|   |   |   |-- controllder-simple.js
+|   |   |   |-- controlled.js
+|   |   |   |-- custom-tag.js
+|   |   |   |-- demo.js
+|   |   |   |-- multilines.js
+|   |   |   |-- multiple-trigger.js
+|   |   |   |-- placement.js
+|   |   |   |-- popupContainer.js
+|   |   |   `-- readonly.js
+|   |   |-- menu
+|   |   |   |-- demo.js
+|   |   |   |-- horizontal.js
+|   |   |   |-- inline-collapsed.js
+|   |   |   |-- inline.js
+|   |   |   |-- sider-current.js
+|   |   |   |-- switch-mode.js
+|   |   |   |-- theme.js
+|   |   |   `-- vertical.js
+|   |   |-- message
+|   |   |   |-- demo.js
+|   |   |   |-- duration.js
+|   |   |   |-- info.js
+|   |   |   |-- loading.js
+|   |   |   |-- other.js
+|   |   |   `-- thenable.js
+|   |   |-- modal
+|   |   |   |-- async.js
+|   |   |   |-- basic.js
+|   |   |   |-- button-props.js
+|   |   |   |-- confirm-promise.js
+|   |   |   |-- confirm.js
+|   |   |   |-- demo.js
+|   |   |   |-- footer.js
+|   |   |   |-- info.js
+|   |   |   |-- locale.js
+|   |   |   |-- manual.js
+|   |   |   `-- position.js
+|   |   |-- notification
+|   |   |   |-- basic.js
+|   |   |   |-- custom-icon.js
+|   |   |   |-- custom-style.js
+|   |   |   |-- demo.js
+|   |   |   |-- duration.js
+|   |   |   |-- placement.js
+|   |   |   |-- update.js
+|   |   |   |-- with-btn.js
+|   |   |   `-- with-icon.js
+|   |   |-- pagination
+|   |   |   |-- basic.js
+|   |   |   |-- changer.js
+|   |   |   |-- controlled.js
+|   |   |   |-- demo.js
+|   |   |   |-- itemRender.js
+|   |   |   |-- jump.js
+|   |   |   |-- mini.js
+|   |   |   |-- more.js
+|   |   |   |-- simple.js
+|   |   |   `-- total.js
+|   |   |-- popconfirm
+|   |   |   |-- basic.js
+|   |   |   |-- demo.js
+|   |   |   |-- dynamic-trigger.js
+|   |   |   |-- icon.js
+|   |   |   |-- locale.js
+|   |   |   `-- placement.js
+|   |   |-- popover
+|   |   |   |-- arrow-point-at-center.js
+|   |   |   |-- basic.js
+|   |   |   |-- control.js
+|   |   |   |-- demo.js
+|   |   |   |-- hover-with-click.js
+|   |   |   |-- placement.js
+|   |   |   `-- triggerType.js
+|   |   |-- progress
+|   |   |   |-- circle-dynamic.js
+|   |   |   |-- circle-mini.js
+|   |   |   |-- circle.js
+|   |   |   |-- dashboard.js
+|   |   |   |-- demo.js
+|   |   |   |-- dynamic.js
+|   |   |   |-- format.js
+|   |   |   |-- line-mini.js
+|   |   |   |-- line.js
+|   |   |   |-- linecap.js
+|   |   |   `-- segment.js
+|   |   |-- radio
+|   |   |   |-- basic.js
+|   |   |   |-- demo.js
+|   |   |   |-- disable.js
+|   |   |   |-- radiobutton-solid.js
+|   |   |   |-- radiobutton.js
+|   |   |   |-- radiogroup-more.js
+|   |   |   |-- radiogroup-options.js
+|   |   |   |-- radiogroup-with-name.js
+|   |   |   |-- radiogroup.js
+|   |   |   `-- size.js
+|   |   |-- rate
+|   |   |   |-- basic.js
+|   |   |   |-- character.js
+|   |   |   |-- clear.js
+|   |   |   |-- demo.js
+|   |   |   |-- disabled.js
+|   |   |   |-- half.js
+|   |   |   `-- text.js
+|   |   |-- select
+|   |   |   |-- automatic-tokenization.js
+|   |   |   |-- basic.js
+|   |   |   |-- coordinate.js
+|   |   |   |-- demo.js
+|   |   |   |-- label-in-value.js
+|   |   |   |-- multiple.js
+|   |   |   |-- optgroup.js
+|   |   |   |-- search-box.js
+|   |   |   |-- search.js
+|   |   |   |-- select-users.js
+|   |   |   |-- size.js
+|   |   |   |-- suffix.js
+|   |   |   `-- tags.js
+|   |   |-- skeleton
+|   |   |   |-- active.js
+|   |   |   |-- basic.js
+|   |   |   |-- children.js
+|   |   |   |-- complex.js
+|   |   |   |-- demo.js
+|   |   |   `-- list.js
+|   |   |-- slider
+|   |   |   |-- basic.js
+|   |   |   |-- demo.js
+|   |   |   |-- event.js
+|   |   |   |-- icon-slider.js
+|   |   |   |-- input-number.js
+|   |   |   |-- mark.js
+|   |   |   |-- tip-formatter.js
+|   |   |   `-- vertical.js
+|   |   |-- spin
+|   |   |   |-- basic.js
+|   |   |   |-- custom-indicator.js
+|   |   |   |-- delayAndDebounce.js
+|   |   |   |-- demo.js
+|   |   |   |-- inside.js
+|   |   |   |-- nested.js
+|   |   |   |-- size.js
+|   |   |   `-- tip.js
+|   |   |-- steps
+|   |   |   |-- customized-progress-dot.js
+|   |   |   |-- demo.js
+|   |   |   |-- error.js
+|   |   |   |-- icon.js
+|   |   |   |-- progress-dot.js
+|   |   |   |-- simple.js
+|   |   |   |-- small-size.js
+|   |   |   |-- step-next.js
+|   |   |   |-- vertical-small.js
+|   |   |   `-- vertical.js
+|   |   |-- switch
+|   |   |   |-- basic.js
+|   |   |   |-- demo.js
+|   |   |   |-- disabled.js
+|   |   |   |-- loading.js
+|   |   |   |-- size.js
+|   |   |   `-- text.js
+|   |   |-- table
+|   |   |   |-- ajax.js
+|   |   |   |-- basic.js
+|   |   |   |-- bordered.js
+|   |   |   |-- colspan-rowspan.js
+|   |   |   |-- custom-filter-panel.js
+|   |   |   |-- demo.js
+|   |   |   |-- drag-sorting.js
+|   |   |   |-- dynamic-settings.js
+|   |   |   |-- edit-cell.js
+|   |   |   |-- edit-row.js
+|   |   |   |-- expand-children.js
+|   |   |   |-- expand.js
+|   |   |   |-- fixed-columns-header.js
+|   |   |   |-- fixed-columns.js
+|   |   |   |-- fixed-header.js
+|   |   |   |-- grouping-columns.js
+|   |   |   |-- head.js
+|   |   |   |-- jsx.js
+|   |   |   |-- nested-table.js
+|   |   |   |-- reset-filter.js
+|   |   |   |-- resizable-column.js
+|   |   |   |-- row-selection-and-operation.js
+|   |   |   |-- row-selection-custom.js
+|   |   |   |-- row-selection.js
+|   |   |   `-- size.js
+|   |   |-- tabs
+|   |   |   |-- basic.js
+|   |   |   |-- card-top.js
+|   |   |   |-- card.js
+|   |   |   |-- custom-add-trigger.js
+|   |   |   |-- custom-tab-bar.js
+|   |   |   |-- demo.js
+|   |   |   |-- disabled.js
+|   |   |   |-- editable-card.js
+|   |   |   |-- extra.js
+|   |   |   |-- icon.js
+|   |   |   |-- position.js
+|   |   |   |-- size.js
+|   |   |   `-- slide.js
+|   |   |-- tag
+|   |   |   |-- basic.js
+|   |   |   |-- checkable.js
+|   |   |   |-- colorful.js
+|   |   |   |-- control.js
+|   |   |   |-- controlled.js
+|   |   |   |-- demo.js
+|   |   |   `-- hot-tags.js
+|   |   |-- time-picker
+|   |   |   |-- 12hours.js
+|   |   |   |-- addon.js
+|   |   |   |-- basic.js
+|   |   |   |-- demo.js
+|   |   |   |-- disabled.js
+|   |   |   |-- hide-column.js
+|   |   |   |-- interval-options.js
+|   |   |   |-- size.js
+|   |   |   |-- suffix.js
+|   |   |   `-- value.js
+|   |   |-- timeline
+|   |   |   |-- alternate.js
+|   |   |   |-- basic.js
+|   |   |   |-- color.js
+|   |   |   |-- custom.js
+|   |   |   |-- demo.js
+|   |   |   |-- pending.js
+|   |   |   `-- right.js
+|   |   |-- tooltip
+|   |   |   |-- arrow-point-at-center.js
+|   |   |   |-- auto-adjust-overflow.js
+|   |   |   |-- basic.js
+|   |   |   |-- demo.js
+|   |   |   `-- placement.js
+|   |   |-- transfer
+|   |   |   |-- advanced.js
+|   |   |   |-- basic.js
+|   |   |   |-- custom-item.js
+|   |   |   |-- demo.js
+|   |   |   |-- large-data.js
+|   |   |   `-- search.js
+|   |   |-- tree
+|   |   |   |-- basic-controlled.js
+|   |   |   |-- basic.js
+|   |   |   |-- customized-icon.js
+|   |   |   |-- demo.js
+|   |   |   |-- directory.js
+|   |   |   |-- draggable.js
+|   |   |   |-- dynamic.js
+|   |   |   |-- line.js
+|   |   |   `-- search.js
+|   |   |-- tree-select
+|   |   |   |-- basic.js
+|   |   |   |-- checkable.js
+|   |   |   |-- demo.js
+|   |   |   |-- multiple.js
+|   |   |   |-- suffix.js
+|   |   |   `-- treeData.js
+|   |   `-- upload
+|   |       |-- avatar.js
+|   |       |-- basic.js
+|   |       |-- defaultFileList.js
+|   |       |-- demo.js
+|   |       |-- directory.js
+|   |       |-- drag.js
+|   |       |-- fileList.js
+|   |       |-- picture-card.js
+|   |       |-- picture-style.js
+|   |       `-- upload-manually.js
+|   |-- map-gl
+|   |   |-- city-info.js
+|   |   |-- city-pin.js
+|   |   |-- map-style-basic-v8.json
+|   |   |-- map-style.js
+|   |   `-- utils.js
+|   |-- mock
+|   |   |-- activity.js
+|   |   |-- chats.js
+|   |   |-- cities.json
+|   |   |-- contacts.js
+|   |   |-- feed.js
+|   |   |-- invoice.js
+|   |   |-- messages.js
+|   |   |-- notifications.js
+|   |   |-- pricing.js
+|   |   |-- taskboard.js
+|   |   `-- timeline.js
+|   `-- vis
+|       |-- axes
+|       |   |-- axis-on-0.js
+|       |   |-- custom-axes-orientation.js
+|       |   |-- custom-axes.js
+|       |   |-- custom-axis-tick-element.js
+|       |   |-- custom-axis-tick-format.js
+|       |   |-- custom-axis.js
+|       |   |-- decorative-axes-criss-cross.js
+|       |   |-- dynamic-complex-edge-hints.js
+|       |   |-- dynamic-crosshair-scatterplot.js
+|       |   |-- dynamic-crosshair.js
+|       |   |-- dynamic-hints.js
+|       |   |-- dynamic-programmatic-rightedge-hints.js
+|       |   |-- dynamic-simple-edge-hints.js
+|       |   |-- dynamic-simple-topedge-hints.js
+|       |   |-- empty-chart.js
+|       |   |-- padded-axis.js
+|       |   |-- parallel-coordinates-example.js
+|       |   |-- static-crosshair.js
+|       |   `-- static-hints.js
+|       |-- color
+|       |   |-- line-chart-many-colors.js
+|       |   `-- mini-color-examples.js
+|       |-- data
+|       |   `-- mini-data-examples.js
+|       |-- datasets
+|       |   |-- car-data.json
+|       |   |-- d3-flare-example.json
+|       |   |-- energy.json
+|       |   |-- iris.json
+|       |   `-- old-faithful.json
+|       |-- flexible
+|       |   `-- flexible-examples.js
+|       |-- index.js
+|       |-- interaction
+|       |   `-- interaction-examples.js
+|       |-- legends
+|       |   |-- continuous-color.js
+|       |   |-- continuous-size.js
+|       |   |-- horizontal-discrete-color.js
+|       |   |-- horizontal-discrete-custom-palette.js
+|       |   |-- searchable-discrete-color.js
+|       |   `-- vertical-discrete-color.js
+|       |-- misc
+|       |   |-- 2d-dragable-plot.js
+|       |   |-- animation-example.js
+|       |   |-- dragable-chart-example.js
+|       |   |-- gradient-example.js
+|       |   |-- label-series-example.js
+|       |   |-- null-data-example.js
+|       |   |-- selection-plot-example.js
+|       |   |-- synced-charts.js
+|       |   |-- time-chart.js
+|       |   |-- triangle-example.js
+|       |   |-- voronoi-line-chart.js
+|       |   `-- zoomable-chart-example.js
+|       |-- parallel-coordinates
+|       |   |-- animated-parallel-coordinates.js
+|       |   |-- basic-parallel-coordinates.js
+|       |   `-- brushed-parallel-coordinates.js
+|       |-- plot
+|       |   |-- area-chart-elevated.js
+|       |   |-- area-chart.js
+|       |   |-- axis-with-turned-labels.js
+|       |   |-- bar-chart.js
+|       |   |-- big-base-bar-chart.js
+|       |   |-- clustered-stacked-bar-chart.js
+|       |   |-- complex-chart.js
+|       |   |-- contour-series-example.js
+|       |   |-- custom-scales.js
+|       |   |-- custom-svg-all-the-marks.js
+|       |   |-- custom-svg-example.js
+|       |   |-- custom-svg-root-level.js
+|       |   |-- difference-chart.js
+|       |   |-- faux-radial-scatterplot.js
+|       |   |-- grid.js
+|       |   |-- heatmap-chart.js
+|       |   |-- hex-heatmap.js
+|       |   |-- hexbin-size-example.js
+|       |   |-- histogram.js
+|       |   |-- labeled-heatmap.js
+|       |   |-- line-chart-canvas.js
+|       |   |-- line-chart-with-style.js
+|       |   |-- line-chart.js
+|       |   |-- line-series-canvas-nearest-xy-example.js
+|       |   |-- linemark-chart.js
+|       |   |-- mixed-stacked-chart.js
+|       |   |-- scatterplot-canvas.js
+|       |   |-- scatterplot.js
+|       |   |-- stacked-histogram.js
+|       |   |-- stacked-horizontal-bar-chart.js
+|       |   |-- stacked-vertical-bar-chart.js
+|       |   |-- whisker-chart.js
+|       |   `-- width-height-margin.js
+|       |-- radar-chart
+|       |   |-- animated-radar-chart.js
+|       |   |-- basic-radar-chart.js
+|       |   |-- four-quadrant-radar-chart.js
+|       |   |-- radar-chart-series-tooltips.js
+|       |   `-- radar-chart-with-tooltips.js
+|       |-- radial-chart
+|       |   |-- arc-series-example.js
+|       |   |-- custom-radius-radial-chart.js
+|       |   |-- donut-chart.js
+|       |   |-- gradient-pie.js
+|       |   `-- simple-radial-chart.js
+|       |-- sankey
+|       |   |-- basic.js
+|       |   |-- energy-sankey.js
+|       |   |-- link-event.js
+|       |   |-- link-hint.js
+|       |   `-- voronoi.js
+|       |-- showcase-components
+|       |   |-- showcase-button.js
+|       |   |-- showcase-dropdown.js
+|       |   |-- showcase-utils.js
+|       |   `-- source-linker.js
+|       |-- showcase-sections
+|       |   |-- axes-showcase.js
+|       |   |-- legends-showcase.js
+|       |   |-- misc-showcase.js
+|       |   |-- parallel-coordinates-showcase.js
+|       |   |-- plots-showcase.js
+|       |   |-- radar-showcase.js
+|       |   |-- radial-showcase.js
+|       |   |-- sankeys-showcase.js
+|       |   |-- sunburst-showcase.js
+|       |   `-- treemap-showcase.js
+|       |-- showcase-utils.js
+|       |-- sunbursts
+|       |   |-- animated-sunburst.js
+|       |   |-- basic-sunburst.js
+|       |   |-- clock-example.js
+|       |   `-- sunburst-with-tooltips.js
+|       `-- treemap
+|           |-- dynamic-treemap.js
+|           `-- simple-treemap.js
+|-- lib
+|   |-- helpers.js
+|   `-- routes.js
+|-- next.config.js
+|-- now.json
+|-- package.json
+|-- pages
+|   |-- _app.js
+|   |-- _document.js
+|   |-- _error.js
+|   |-- apps
+|   |   |-- calendar.js
+|   |   |-- chat.js
+|   |   |-- messages.js
+|   |   `-- social.js
+|   |-- charts
+|   |   |-- axes.js
+|   |   |-- legends.js
+|   |   |-- misc.js
+|   |   |-- plots.js
+|   |   |-- radar.js
+|   |   |-- radial.js
+|   |   |-- sankeys.js
+|   |   |-- sunburst.js
+|   |   `-- treemaps.js
+|   |-- data-display
+|   |   |-- avatar.js
+|   |   |-- badge.js
+|   |   |-- calendar.js
+|   |   |-- card.js
+|   |   |-- carousel.js
+|   |   |-- collapse.js
+|   |   |-- list.js
+|   |   |-- popover.js
+|   |   |-- table.js
+|   |   |-- tabs.js
+|   |   |-- tag.js
+|   |   |-- timeline.js
+|   |   |-- tooltip.js
+|   |   `-- tree.js
+|   |-- data-entry
+|   |   |-- autocomplete.js
+|   |   |-- cascader.js
+|   |   |-- checkbox.js
+|   |   |-- datepicker.js
+|   |   |-- form.js
+|   |   |-- input.js
+|   |   |-- inputnumber.js
+|   |   |-- mention.js
+|   |   |-- radio.js
+|   |   |-- rate.js
+|   |   |-- select.js
+|   |   |-- slider.js
+|   |   |-- switch.js
+|   |   |-- timepicker.js
+|   |   |-- transfer.js
+|   |   |-- treeselect.js
+|   |   `-- upload.js
+|   |-- extras
+|   |   |-- blank.js
+|   |   |-- invoice.js
+|   |   |-- pricing.js
+|   |   `-- timeline.js
+|   |-- feedback
+|   |   |-- alert.js
+|   |   |-- drawer.js
+|   |   |-- message.js
+|   |   |-- modal.js
+|   |   |-- notification.js
+|   |   |-- popconfirm.js
+|   |   |-- progress.js
+|   |   |-- skeleton.js
+|   |   `-- spin.js
+|   |-- forgot.js
+|   |-- general
+|   |   |-- button.js
+|   |   `-- icon.js
+|   |-- index.js
+|   |-- lockscreen.js
+|   |-- maps
+|   |   |-- geojson.js
+|   |   `-- markers.js
+|   |-- media
+|   |   |-- grid.js
+|   |   `-- tile.js
+|   |-- navigation
+|   |   |-- affix.js
+|   |   |-- breadcrumb.js
+|   |   |-- dropdown.js
+|   |   |-- menu.js
+|   |   |-- pagination.js
+|   |   `-- steps.js
+|   |-- signin.js
+|   |-- signup.js
+|   |-- taskboard.js
+|   `-- widgets.js
+`-- static
+    |-- app.css
+    |-- images
+    |   |-- 23.jpg
+    |   |-- avatar.jpg
+    |   |-- face1.jpg
+    |   |-- face2.jpg
+    |   |-- face3.jpg
+    |   |-- face4.jpg
+    |   |-- face5.jpg
+    |   |-- triangle.png
+    |   `-- unsplash
+    |       |-- 1.jpg
+    |       |-- 10.jpg
+    |       |-- 11.jpg
+    |       |-- 12.jpg
+    |       |-- 13.jpg
+    |       |-- 14.jpg
+    |       |-- 15.jpg
+    |       |-- 16.jpg
+    |       |-- 17.jpg
+    |       |-- 18.jpg
+    |       |-- 19.jpg
+    |       |-- 2.jpg
+    |       |-- 20.jpg
+    |       |-- 21.jpg
+    |       |-- 22.jpg
+    |       |-- 23.jpg
+    |       |-- 3.jpg
+    |       |-- 4.jpg
+    |       |-- 5.jpg
+    |       |-- 6.jpg
+    |       |-- 7.jpg
+    |       |-- 8.jpg
+    |       `-- 9.jpg
+    |-- nprogress.css
+    |-- quill.bubble.css
+    |-- quill.core.css
+    |-- quill.snow.css
+    |-- react-vis.css
+    |-- styles.css
+    |-- us-income.geojson
+    `-- weather
+        |-- cloudy-day-1.svg
+        |-- cloudy-day-2.svg
+        |-- cloudy-day-3.svg
+        |-- cloudy-night-1.svg
+        |-- cloudy-night-2.svg
+        |-- cloudy-night-3.svg
+        |-- cloudy.svg
+        |-- day.svg
+        |-- night.svg
+        |-- rainy-1.svg
+        |-- rainy-2.svg
+        |-- rainy-3.svg
+        |-- rainy-4.svg
+        |-- rainy-5.svg
+        |-- rainy-6.svg
+        |-- rainy-7.svg
+        |-- snowy-1.svg
+        |-- snowy-2.svg
+        |-- snowy-3.svg
+        |-- snowy-4.svg
+        |-- snowy-5.svg
+        |-- snowy-6.svg
+        |-- thunder.svg
+        |-- weather-sprite.svg
+        |-- weather.svg
+        |-- weather_sagittarius.svg
+        `-- weather_sunset.svg
+</code></pre>
+
+<h1>Dashboard routes</h1>
+
+<p>Dashboard routes are dynamically defined in /lib/routes.js.</p>
+
+<h5>Links</h5>
+
+<p><code>
+[{
+  path: '/widgets',
+  name: 'Widgets',
+  icon: &lt;Droplet strokeWidth={1} size={16} /&gt;,
+  badge: {
+    value: '5'
+  }
+}]
+</code></p>
+
+<p>Where:</p>
+
+<ul>
+<li>path - path to your route</li>
+<li>name - the text appearing in the sidebar</li>
+<li>icon - icon element displayed in the sidebar</li>
+<li>badge - (optional) used to display the badge element</li>
+</ul>
+
+<h5>Sub menus</h5>
+
+<p><code>
+[{
+  name: 'Apps',
+  icon: &lt;MessageCircle strokeWidth={1} size={16} /&gt;,
+  badge: {
+    value: '5'
+  },
+  children: [
+    {
+      path: '/apps/calendar',
+      name: 'Calendar'
+    },
+    {
+      path: '/apps/messages',
+      name: 'Messages'
+    },
+    {
+      path: '/apps/social',
+      name: 'Social'
+    },
+    {
+      path: '/apps/chat',
+      name: 'Chat'
+    }
+  ]
+}]
+</code></p>
+
+<p>Where:</p>
+
+<ul>
+<li>path - path to your route</li>
+<li>name - the text appearing in the sidebar</li>
+<li>icon - icon element displayed in the sidebar</li>
+<li>badge - (optional) used to display the badge element</li>
+<li>Children - an array of submenu objects. The object takes in path and name</li>
+</ul>
+
+<h1>CSS Helpers</h1>
+
+<p>The template comes with a myriad of css helper classes which can be found in /lib/globalStyles.js.</p>
+
+<p>These are all the available helper classes used in the template</p>
+
+<h2>General</h2>
+
+<p><code>
+.list-unstyled - Unstyled list
+.overflow-hidden - Overflow hidden
+.scroll-y - Scroll y
+.scroll-x - Scroll x
+.fill-workspace - Fill an element in the workspace area with padding
+.full-workspace - Fill an element in the workspace area without the padding
+</code></p>
+
+<h2>Background colors</h2>
+
+<p><code>
+.bg-primary
+.bg-normal
+.bg-success
+.bg-info
+.bg-warning
+.bg-error
+.bg-dark
+.bg-white
+.bg-transparent
+</code></p>
+
+<h2>Borders</h2>
+
+<p><code>
+.border - Border around an element
+.border-top - Border on the top
+.border-right - Border on the right
+.border-bottom - Border on the bottom
+.border-left - Border on the left
+.border-0 - Remove all borders
+.border-top-0 - Remove the top border
+.border-right-0 - Remove the right border
+.border-bottom-0 - Remove the bottom border
+.border-left-0 - Remove the left border
+.border-primary - Set border color using the primary theme color
+.border-normal - Set border color using the normal theme color
+.border-success - Set border color using the success theme color
+.border-info - Set border color using the info theme color
+.border-warning - Set border color using the warning theme color
+.border-error - Set border color using the error theme color
+.border-white - Set border color using the white theme color
+</code></p>
+
+<h2>Border radius</h2>
+
+<p><code>
+.rounded - Set border radius on all corners using the theme border radius base
+.rounded-top - Set border-radius on the top corners of an element
+.rounded-right - Set border-radius on the right corners of an element
+.rounded-bottom - Set border-radius on the bottom corners of an element
+.rounded-left - Set border-radius on the left corners of an element
+.rounded-circle - Set border-radius on all corners to 50%
+.rounded-0 - remove border-radius
+</code></p>
+
+<h2>Shadows</h2>
+
+<p><code>
+.shadow-sm
+.shadow
+.shadow-lg
+.shadow-none / .shadow-0
+</code></p>
+
+<h2>Spacing</h2>
+
+<p>Spacing classes are named using the format: {property}{sides}-{size}</p>
+
+<p>Where property is one of:
+- m - for classes that set margin
+- p - for classes that set padding</p>
+
+<p>Where sides is one of:
+- t - for classes that set margin-top or padding-top
+- b - for classes that set margin-bottom or padding-bottom
+- l - for classes that set margin-left or padding-left
+- r - for classes that set margin-right or padding-right
+- x - for classes that set both *-left and *-right
+- y - for classes that set both *-top and *-bottom
+- blank - for classes that set a margin or padding on all 4 sides of the element</p>
+
+<p>Where size is one of:
+- 0 - for classes that eliminate the margin or padding by setting it to 0
+- 1 - for classes that set the margin or padding to 0.25rem
+- 2 - for classes that set the margin or padding to 0.5rem
+- 3 - for classes that set the margin or padding to 1rem
+- 4 - for classes that set the margin or padding to 1.5rem
+- 5 - for classes that set the margin or padding to 3rem
+- auto - for classes that set the margin to auto</p>
+
+<h2>Text</h2>
+
+<p><code>
+.text-monospace
+.text-justify
+.text-nowrap
+.text-truncate
+.text-left
+.text-right
+.text-center
+.text-lowercase
+.text-uppercase
+.text-capitalize
+.text-weight-light
+.text-weight-normal
+.text-weight-bold
+.font-italic
+.text-white
+.text-primary
+.text-normal
+.text-success
+.text-info
+.text-warning
+.text-error
+.text-dark
+.text-body
+.text-muted
+.text-black-50
+.text-white-50
+.text-white-65
+.text-light
+.text-hide
+</code></p>
+
+<h1>Third party components</h1>
+
+<pre>
+| Ant design      | <a href="https://ant.design/">https://ant.design/</a> |
+| Next.js      | <a href="https://nextjs.org">https://nextjs.org</a>      |
+| Styled components | <a href="https://styled-components.com">https://styled-components.com</a>      |
+| React vis | <a href="https://uber.github.io/react-vis/">https://uber.github.io/react-vis/</a> |
+| React Quill | <a href="https://github.com/zenoamaro/react-quill">https://github.com/zenoamaro/react-quill</a> |
+| React noSSR | <a href="https://github.com/kadirahq/react-no-ssr">https://github.com/kadirahq/react-no-ssr</a> |
+| React map gl | <a href="https://github.com/uber/react-map-gl">https://github.com/uber/react-map-gl</a> |
+| React feather icons | <a href="https://feathericons.com/">https://feathericons.com/</a> |
+| React beautiful dnd | <a href="https://github.com/atlassian/react-beautiful-dnd">https://github.com/atlassian/react-beautiful-dnd</a> |
+| NProgress | <a href="https://github.com/sergiodxa/next-nprogress">https://github.com/sergiodxa/next-nprogress</a> |
+| Date fns | <a href="https://date-fns.org/">https://date-fns.org/</a> |</pre>
+
+
+</div>
+<script src="res.js"></script>
+</body>
+</html>
